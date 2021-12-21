@@ -26,7 +26,7 @@ def main(config_path: str) -> None:
     
     # Create GCS Path Structure
     date_str = datetime.now().strftime('%Y%m%d%H%M%S')
-    gcs_path = f'''odm/{config.get('table_name')}/{date_str}/{os.path.basename(config.get('source_path'))}'''
+    gcs_path = f'''project/{config.get('table_name')}/{date_str}/{os.path.basename(config.get('source_path'))}'''
 
     # Upload File to GCS
     # We'll use this for ingest to BQ
