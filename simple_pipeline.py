@@ -39,7 +39,6 @@ def main(config_path: str) -> None:
     except Exception:
         raise('Cannot Upload File To GCS')
 
-
     # Ingest Data From GCS to GBQ
     client = bigquery.client.Client(credentials=token)
 
