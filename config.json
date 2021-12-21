@@ -1,0 +1,9 @@
+{
+    "table_name": "json_ingestion_test",
+    "source_path": "./us-states.json",
+    "project_id": "your-project-id",
+    "dataset_id": "your-dataset-id",
+    "bucket_id": "your-bucket-id",
+    "location": "your-gcp-region-id"
+
+}
